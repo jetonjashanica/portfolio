@@ -1,0 +1,152 @@
+/* Global View */
+
+body{
+    font-family: 'Asap', sans-serif;
+    color: white;
+    background-color: #bebebe;
+    background-image: url(image/Logo\ Background.png);
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.container{
+    min-height: 500px;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 140px;
+}
+
+.container-header{
+    background-color: rgb(75, 75, 75);
+    min-height: 100px;
+    margin-bottom: 40px;
+    position: fixed;
+    width: 100%;
+}
+
+header{
+    max-width: 1024px;
+    min-height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col{
+    background-color: rgb(11, 225, 11);
+    min-height: 200px;
+    width: 30%;
+    margin-bottom: 40px;
+}
+
+.col p{
+    font-size: 0.875rem;
+    padding: 20px 25px;
+    line-height: 1.25rem;
+}
+
+.hide-desktop-only{
+    display: none;
+}
+
+.col img{
+    width: 100%;
+    height: auto;
+}
+
+.col p::first-line{
+    font-weight: 700;
+}
+
+.mybuttons{
+    padding: 10px 25px;
+    border-style: solid;
+    border-width: 1px;
+    margin-left: 20px;
+}
+
+.highlight{
+    font-weight: 700;
+}
+
+.mob-wrapper{
+    display: none;
+}
+
+
+/* Tablet View */
+@media (max-width: 768px){
+
+.col{
+    width: 45%;
+}
+
+.hide-desktop-only{
+    display: block;
+}
+
+.container-header{
+    position: relative;
+}
+
+.container{
+    padding-top: 20px;
+}
+
+nav{
+    display: none;
+}
+
+nav a{
+    display: block;
+}
+
+.logo{
+    padding: 40px 0;
+}
+
+.mybuttons{
+    margin-left: 0;
+}
+
+.mob-wrapper{
+    display: block;
+    padding-right: 30px;
+}
+
+.mob-nav{
+    display: none;
+    position: absolute;
+    padding-top: 10px;
+}
+
+.navbutton{
+    display: block;
+    background-color: coral;
+    padding: 15px 30px;
+    margin-left: -70px;
+    text-align: center;
+}
+
+}
+
+
+/* Mobile View */
+@media (max-width: 400px){
+
+.col{
+    width: 100%;
+}
+
+.hide-mobile{
+    display: none;
+}
+
+}
